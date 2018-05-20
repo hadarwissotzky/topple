@@ -30,13 +30,13 @@ $(document).on('ready', function () {
     });
     
      // Collapse navigation on click on nav anchor in Mobile //
-       
+    /*
     $(".nav a").on('click', function () {
         $("#myNavbar").removeClass("in").addClass("collapse");
     });
-
+*/
      // navbar Scroll //
-     
+  /*
     $(".navbar-nav li a, .navbar-brand, .button a, .a-btn, .a-btn-style-1,.a-btn-style-2, .a-btn-style-3").on("click", function (e) {
         var anchor = $(this);
         $("html, body").stop().animate({
@@ -54,7 +54,7 @@ $(document).on('ready', function () {
         }, 1000);
         e.preventDefault();
     });
-    
+
     $('.sidebar-menu .fa-times').on('click', function () {
         $('.sidebar-menu').addClass('hide-menu');
         $('.toggle-menu .fa').removeClass('hide-toggle');
@@ -64,7 +64,7 @@ $(document).on('ready', function () {
         $('.sidebar-menu').removeClass('hide-menu');
         $(this).addClass('hide-toggle');
     });
-	
+	*/
 	//  section skills
 	
 	var wind = $(window);
@@ -195,7 +195,7 @@ $(document).on('ready', function () {
         
     });
 	
-	
+	/*
 	// swiper slider for carousel page
 	var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
@@ -206,9 +206,9 @@ $(document).on('ready', function () {
         effect: 'fade',
 		speed: 500
     });
-	
+	*/
 	// dynamic tabs
-	
+	/*
 	$('.services-tabs ul li').on('click', function(){
 		var myID = $(this).attr('id');
 		$(this).addClass('active').siblings().removeClass('active');
@@ -216,7 +216,7 @@ $(document).on('ready', function () {
 		
 		$('#' + myID + '-content').fadeIn(700).siblings().hide();
 	});
-	
+	*/
 	$('.element').typed({
         strings: [ " Creative Agency",  "  The Best One Page", " Akser Creative page"],
         loop: true,
@@ -340,11 +340,11 @@ $(document).on('ready', function () {
     });
     
     // Click On Button To Scroll Top
-    
+    /*
     scrollButton.on('click', function () {
         
         $('html,body').animate({ scrollTop : 0 }, 1100);
         
     });
-	
+	*/
 });
