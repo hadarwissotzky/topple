@@ -825,7 +825,7 @@ start section video-container for video page
     width: 100%;
     overflow: visible;
     background: url(images/cream_pixels.png);
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 0px;
 
 
@@ -3988,4 +3988,11 @@ p .q-thumb {
 }
 .top-nav-test:hover ul {
     display: block;
+}
+.speaking h3 {
+    line-height: 1.3em;
+    margin-bottom: 14px;
+    margin-top: 21px;
+    font-weight: 700;
+    font-size: 22px;
 }
