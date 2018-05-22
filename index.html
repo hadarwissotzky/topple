@@ -88,3 +88,27 @@ headerBackgroundStyle: transparent
     <h2>Featured Articles</h2>
 </section>
 
+<section class="white-wrap ptb50">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="row">
+                    {% for article in site.data.articles %}
+                    <div class="col-sm-4 ta-center">
+                        <div class="feat-img-box">
+                            <a href="{{ article.url | relative_url }}">
+                                <img width="351" height="200" src="{{ article.src | relative_url }}" class="attachment-about-image size-about-image wp-post-image" alt="{{ article.alt }}"  sizes="(max-width: 351px) 100vw, 351px">									</a>
+                        </div>
+                        <h3 class="post_title">
+                            <a href="{{ article.url | relative_url }}">
+                                {{ article.title }}								</a>
+                        </h3>
+                        <p>{{ article.description }}</p>
+                        <p><a href="{{ article.url | relative_url }}">Read</a></p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
