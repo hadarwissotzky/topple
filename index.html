@@ -40,7 +40,11 @@ headerBackgroundStyle: transparent
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         {% for review in site.data.reviews %}
-                        <div class="item active" style="min-height: 150px;">
+                        {% if forloop.first  %}
+                            <div class="item active" style="min-height: 150px;">
+                        {% else %}
+                                <div class="item" style="min-height: 150px;">
+                        {% endif %}
                             <div class="col-sm-3 ta-center">
                                 <img width="150" height="150" src="{{ 'assets/images/' | append: review.src | relative_url }}" class="img-circle wp-post-image" alt="david_allen_blue"  sizes="(max-width: 150px) 100vw, 150px">
                             </div><!--end col-sm-4-->
