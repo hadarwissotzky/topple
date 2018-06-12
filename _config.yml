@@ -22,7 +22,7 @@ url: "http://www.topplebook.com/" # the base hostname & protocol for your site, 
 twitter_username:
 github_username:  topple
 
-google_analytics: UA-000-1
+google_analytics: UA-120812862-1
 
 # this is a reference to our AWS API Gateway, it uses a Lambda function to verify the Captcha submission, and then
 # if success will send a notification to Simple Notification System in AWS.
